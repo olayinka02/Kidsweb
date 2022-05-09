@@ -1,0 +1,894 @@
+*{
+    padding: 0;
+    margin: 0;
+  
+}
+html{
+  width:100% !important;
+  padding: 0;
+  margin: 0;
+
+}
+
+:root{
+    --primary-color:#ffffff;
+    --deep-color: #373A3B;
+    --nav-one:#F4F4F4;
+    --expert-bg:#E8E8E8;
+    --faded-stroke:#a0a0a0;
+    --card-bg:#f4f4f4;
+    --linear-gradient: #F4F4F4;
+    --linear-gradientx2: rgba(229, 234, 236, 0.84);
+    --linear-gradientx3:rgba(47, 50, 51, 0);
+    --linear-gradientx4:rgba(47, 50, 51, 0);
+}
+.dark-theme {
+    --primary-color:#000000;
+    --deep-color: #FFFFFF;
+    --nav-one: #343637;
+    --expert-bg:#2F3233;
+    --faded-stroke:#727272;
+    --card-bg:#3E3E3E;
+    --linear-gradient: #2F3233;
+    --linear-gradientx2:  rgba(47, 50, 51, 0.8302);
+    --linear-gradientx3:rgba(47, 50, 51, 0);
+    --linear-gradientx4: rgba(47, 50, 51, 0);
+}
+
+body{
+ width: 100% !important;
+ background-color: var(--nav-one);
+}
+
+.importedsvg{
+    width:22px;
+    height:22px;
+    margin-left:0.2rem;
+    stroke:#373A3B;
+   
+}
+.segmentline{
+    margin-top:0.1rem;
+}
+
+
+
+#nav-icon3 {
+    width: 30px;
+    height: 10px;
+    position: relative;
+    margin: 20px auto;
+   
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+   #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background:var(--deep-color);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 10px;
+  }
+  
+  #nav-icon3 span:nth-child(4) {
+    top: 20px;
+  }
+  
+  #nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .navchildren{
+    flex: 1 !important;
+    text-align: right !important;
+  }
+
+ .btn{
+   background-color:var(--deep-color);
+   color: var(--nav-one);
+   font-size:0.9rem;
+   font-weight: 450;
+   border: 0.5px solid #28A9F2 !important;
+   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+   border-radius:2px;
+   width:10rem;
+ }
+ .btnx{
+  background-color: #2F3233;
+  color: var(--nav-one);
+  font-size:0.9rem;
+  font-weight: 450;
+  border: 0.5px solid #28A9F2 !important;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius:2px;
+  
+}
+ .iconname{
+  font-style: normal;
+  font-size:0.8rem;
+  display:none;
+ }
+  .Hero-Landing{
+    background-image: none;
+    height:90vh;
+    width:100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .Hero-Landing-left{
+    background: #28A9F2;
+    height:auto;
+    width:100%;
+    background-size: cover;
+    padding-bottom:4rem;
+
+  }
+  .Hero-Landing-right{
+    background:var(--nav-one);
+    height:auto;
+    width:100%;
+    background-size: cover;
+    padding-bottom:4rem;
+
+  }
+  .Hero-Landing-left-text{
+    color:var(--deep-color);
+    margin-left:0rem;
+    margin-top:4rem;
+  }
+  .left-text-heading-one{
+    font-size:2.6rem;
+    font-weight: bold;
+  }
+  .left-text-heading-two{
+    font-size:2.0rem;
+    font-weight: bold;
+  }
+  .left-text-heading-three{
+    font-size:0.8rem;
+    font-weight: 770;
+  }
+ .secondbody{
+   background:#28A9F2;
+   width: 100%;
+   height:auto;
+   margin-top:3rem;
+   padding-top:5rem;
+   padding-bottom:3rem;
+   padding-left:0rem;
+   padding-right:0rem;
+ }
+#icon, #iconx{
+  cursor: pointer;
+}
+.mom{
+  float: right !important;
+  display: flex;
+  flex: 1;
+  text-align: right;
+}
+.iconx{
+  color: var(--deep-color)!important;
+  width:45px ;
+  height:45px;
+  
+}
+.navlink{
+  color: #373A3B!important;
+
+}
+.kidsschool{
+ 
+  display:none;
+}
+.navitembody{
+  margin-right:0rem !important;
+}
+.navitem{
+  font-size:0.9rem;
+  color: var(--deep-color) !important;
+}
+.navitem:hover{
+  font-size:0.9rem;
+  color: #54b7f1 !important;
+}
+
+.active{
+  font-size:0.9rem;
+  font-weight: bold;
+  color: #28A9F2 !important;
+}
+.smallnavbody{
+  background-color: var(--nav-one);
+  width:100% !important;
+}
+.navbar{
+  background-color: var(--nav-one);
+  width:100% !important;
+}
+.countingBody{
+  margin: auto;
+  display: flex;
+  color: var(--nav-one);
+  width:100% !important;
+  
+ 
+}
+.thirdbody{
+  background:url(./images/thirdbackground.svg),var(--expert-bg);
+  background-size: cover;
+  width:100%;
+  height:auto;
+  padding-top:5rem;
+  padding-bottom:5rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+.Missionwhat{
+  color: var(--deep-color); 
+}
+.Missiontext{
+  font-size:2.0rem;
+  font-weight: bolder;
+  width:100%;
+  color: var(--deep-color);
+}
+.kidsxx{
+  margin-top:2rem;
+}
+.school{
+  background: url(./images/schoolbg.svg),var(--card-bg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  border:1px solid var(--faded-stroke);
+  padding-top:2rem;
+  padding-bottom:2rem;
+  width:100%;
+  border-radius:0.3rem;
+  margin-bottom:0.4rem;
+  margin-right:0rem;
+  margin-left:0rem;
+  
+  
+ 
+}
+.sport{
+  background: url(./images/sportbg.svg),var(--card-bg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  border:1px solid var(--faded-stroke);
+  padding-top:2rem;
+  padding-bottom:2rem;
+  width:100%;
+  border-radius:0.3rem;
+  margin-bottom:0.4rem;
+}
+
+.art{
+  background: url(./images/artbg.svg),var(--card-bg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  border:1px solid var(--faded-stroke);
+  padding-top:2rem;
+  padding-bottom:2rem;
+  width:100%;
+  border-radius:0.3rem;
+  margin-bottom:0.4rem;
+  margin-right:0rem;
+  margin-left:0rem;
+}
+
+.tech{
+  background: url(./images/techbg.svg),var(--card-bg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  border:1px solid var(--faded-stroke);
+  padding-top:2rem;
+  padding-bottom:2rem;
+  width:100%;
+  border-radius:0.3rem;
+  margin-bottom:0.4rem;
+  
+}
+.cardtopic{
+  color: var(--deep-color);
+}
+.cardtext{
+  color: var(--deep-color);
+  font-size:0.8rem;
+}
+.Inamission{
+  background: url(./images/inamissionbg.svg) var(--nav-one);
+  height:auto;
+  width:100%;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+  padding-top:5rem;
+  padding-bottom:3rem;
+
+}
+.inamissiontext{
+  color: var(--deep-color);
+  font-size:0.8rem;
+}
+.recentdonation{
+  background-image: url(./images/recentdonationbg.svg);
+  background-size: cover;
+  width:100%;
+  height:90vh;
+  padding-top:4rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+.donateinformation{
+  background-image:none;
+  background-size: cover;
+  width:100%;
+  border-radius:0.4rem;
+  height:auto;
+  padding:1.2rem;
+}
+.volunteer{
+  background: url(./images/volunteerbg.svg),var(--expert-bg);
+  background-size: cover;
+  width:100%;
+  height:auto;
+  padding-top:5rem;
+  padding-bottom:7rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem; 
+}
+.becomevolunteer{
+  background:#28A9F2;
+  background-size: cover;
+  width:100%;
+  height:auto;
+  padding-top:1.5rem;
+  padding-bottom:1.5rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem; 
+}
+.becomevolunteerx2{
+  background-color: #28A9F2;
+  background-size: cover;
+  width:100%;
+  height:auto;
+  padding-top:5.5rem;
+  padding-bottom:5.5rem;
+  padding-right:0rem;
+  padding-left:0rem;
+}
+.becomevolunteerbtn{
+  background-color: #ffffff;
+  color:#28A9F2;
+  width:90%;
+  font-size:0.9rem;
+  margin-left:0rem;
+}
+.ceo{
+  background: url(./images/volunteerbg.svg),var(--expert-bg);
+  background-size: cover;
+  width:100%;
+  height:auto;
+  padding-top:5rem;
+  padding-bottom:7rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem; 
+}
+.executivetalk{
+  font-size:0.8rem;
+  color: var(--deep-color);
+}
+.copyright{
+  font-size:0.8rem;
+  color:var(--deep-color);
+}
+.bottomnav{
+  padding-top:4rem;
+  padding-bottom:4rem;
+  padding-left:2rem;
+  padding-right:2rem;
+}
+.bottomnavlisting{
+  font-size:0.85rem;
+  color: #28A9F2;
+}
+.bottomnavlistingchildren{
+  font-size:0.83rem;
+  color:var(--deep-color);
+}
+.smallnavbodydown{
+  background-color: var(--expert-bg);
+  width:100% !important;
+}
+.Hero-Landing-about{
+  background: url(./images/aboutusbg.svg),var(--expert-bg);
+  background-size: cover;
+  width:100%;
+  height:auto;
+  padding-top:8rem;
+  padding-bottom:2rem;
+  padding-left:0.2rem;
+  padding-right:0.2rem;
+}
+.aboutusbody{
+  width:100%;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+.aboutusbodyparagraph{
+  font-size:0.8rem;
+  font-weight: 650;
+}
+.aboutusbodyheading{
+  font-size:3rem;
+  font-weight: bold;
+}
+.Hero-Landing-latestcauses{
+  background: url(./images/latestcausesbg.svg),var(--expert-bg);
+  background-size: cover;
+  width:100%;
+  height:auto;
+  padding-top:8rem;
+  padding-bottom:2rem;
+  padding-left:0.2rem;
+  padding-right:0.2rem;
+}
+.Hero-Landing-ourkid{
+  background: url(./images/ourkigdbg.svg),var(--expert-bg);
+  background-size: cover;
+  width:100%;
+  height:auto;
+  padding-top:8rem;
+  padding-bottom:2rem;
+  padding-left:0.2rem;
+  padding-right:0.2rem;
+}
+
+
+@media (min-width: 576px) { 
+  .kidsschool{
+   
+    display:inline;
+  }
+}
+
+
+@media (min-width: 768px) { 
+  .navitembody{
+    margin-right:2rem !important;
+  }
+ }
+
+
+
+
+
+
+
+@media (min-width: 992px) { 
+  .navitembody{
+    margin-right:2rem !important;
+  }
+  .Hero-Landing-left-text{
+    color:#373A3B;
+    margin-left:7rem;
+    margin-top:9rem;
+  }
+  .left-text-heading-one{
+    font-size:3rem;
+    font-weight: bold;
+  }
+  .left-text-heading-two{
+    font-size:3.5rem;
+    font-weight: bold;
+  }
+  .left-text-heading-three{
+    font-size:0.8rem;
+    font-weight: 500;
+  }
+  .Hero-Landing{
+    background-color:var(--nav-one) ;
+    width:100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .Hero-Landing-left{
+    background: #28A9F2;
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 0em;
+
+  }
+  .secondbody{
+    background:#28A9F2;
+    width: 100%;
+    height:auto;
+    margin-top:0rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    padding-left:4rem;
+    padding-right:4rem;
+  }
+  .thirdbody{
+    background:url(./images/thirdbackground.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:9rem;
+    padding-bottom:7rem;
+    padding-left:9rem;
+    padding-right:9rem;
+  }
+  .kidsxx{
+    margin-top:0rem;
+  }
+  .Missiontext{
+    font-size:3.2rem;
+    font-weight: bolder;
+    width:80%;
+    color: var(--deep-color);
+  }
+  .Inamission{
+    background: url(./images/inamissionbg.svg) var(--nav-one);
+    height:auto;
+    width:100%;
+    padding-left:9rem;
+    padding-right:9rem;
+    padding-top:9rem;
+    padding-bottom:5rem;
+  }
+  .iconname{
+    font-style: normal;
+    font-size:0.8rem;
+    display: inline;
+   }
+   .btn{
+    background-color: #7cc5f0;
+    color: var(--nav-one);
+    font-size:0.9rem;
+    font-weight: 400;
+    border: #28A9F2 !important;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius:2px
+  }
+  .recentdonation{
+    background-image: url(./images/recentdonationbg.svg);
+    background-size: cover;
+    width:100%;
+    height:90vh;
+    padding-top:4rem;
+    padding-left:10rem;
+    padding-right:10rem;
+  }
+  .donateinformation{
+    background-image: url(./images/donateinformationbg.svg);
+    background-size: cover;
+    width:100%;
+    border-radius:0.4rem;
+    height:auto;
+    padding:1.2rem;
+  }
+  .volunteer{
+    background: url(./images/volunteerbg.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:9rem;
+    padding-bottom:7rem;
+    padding-left:9rem;
+    padding-right:9rem; 
+  }
+  .becomevolunteer{
+    background:var(--nav-one);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:9rem;
+    padding-bottom:7rem;
+    padding-left:9rem;
+    padding-right:9rem; 
+  }
+  .becomevolunteerx2{
+    background:url(./images/becomevolunteerbg.svg) var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:5.5rem;
+    padding-bottom:5.5rem;
+    padding-right:5rem;
+    padding-left:5rem;
+   
+  }
+  .becomevolunteerbtn{
+    background-color: #ffffff;
+    color:#28A9F2;
+    font-size:0.9rem;
+    margin-left:6rem;
+  }
+  .ceo{
+    background: url(./images/volunteerbg.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    padding-left:20rem;
+    padding-right:20rem; 
+  }
+  .executivetalk{
+    font-size:0.8rem;
+  }
+  .aboutusbody{
+    width:100%;
+    padding-left:20rem;
+    padding-right:20rem;
+  }
+  .Hero-Landing-about{
+    background: url(./images/aboutusbg.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:80vh;
+    padding-top:20rem;
+    padding-left:5rem;
+    padding-right:5rem;
+  }
+  .aboutusbody{
+    width:100%;
+    padding-left:20rem;
+    padding-right:20rem;
+  }
+  .aboutusbodyparagraph{
+    font-size:0.8rem;
+    font-weight: 650;
+  }
+  .aboutusbodyheading{
+    font-size:4rem;
+    font-weight: bold;
+  }
+  .Hero-Landing-latestcauses{
+    background: url(./images/latestcausesbg.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:23rem;
+    padding-bottom:7rem;
+    padding-left:5rem;
+    padding-right:5rem;
+  }
+  .Hero-Landing-ourkid{
+    background: url(./images/ourkigdbg.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:23rem;
+    padding-bottom:7rem;
+    padding-left:5rem;
+    padding-right:5rem;
+  }
+  
+}
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .navitembody{
+    margin-right:2rem !important;
+  }
+  .Hero-Landing-left-text{
+    color:#373A3B;
+    margin-left:12rem;
+    margin-top:12rem;
+  }
+  .left-text-heading-one{
+    font-size:4rem;
+    font-weight: bold;
+  }
+  .left-text-heading-two{
+    font-size:4.5rem;
+    font-weight: bold;
+  }
+  .left-text-heading-three{
+    font-size:0.8rem;
+    font-weight: 500;
+  }
+  .Hero-Landing{
+    background-color:var(--nav-one) ;
+    width:100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .Hero-Landing-left{
+    background: url(./images/Hero-landing-right.svg) !important;
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 0em;
+
+  }
+  .secondbody{
+    background:#28A9F2;
+    width: 100%;
+    height:auto;
+    margin-top:0rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    padding-left:4rem;
+    padding-right:4rem;
+  }
+  .thirdbody{
+    background:url(./images/thirdbackground.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:9rem;
+    padding-bottom:7rem;
+    padding-left:9rem;
+    padding-right:9rem;
+  }
+  .kidsxx{
+    margin-top:0rem;
+  }
+  .Missiontext{
+    font-size:3.2rem;
+    font-weight: bolder;
+    width:80%;
+    color: var(--deep-color);
+  }
+  .Inamission{
+    background: url(./images/inamissionbg.svg) var(--nav-one);
+    height:auto;
+    width:100%;
+    padding-left:9rem;
+    padding-right:9rem;
+    padding-top:9rem;
+    padding-bottom:5rem;
+  }
+  .iconname{
+    font-style: normal;
+    font-size:0.8rem;
+    display: inline;
+   }
+   .btn{
+    background-color: #28A9F2;
+    color: var(--nav-one);
+    font-size:0.9rem;
+    font-weight: 400;
+    border: #28A9F2 !important;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    border-radius:2px
+  }
+  .recentdonation{
+    background-image: url(./images/recentdonationbg.svg);
+    background-size: cover;
+    width:100%;
+    height:90vh;
+    padding-top:4rem;
+    padding-left:10rem;
+    padding-right:10rem;
+  }
+  .donateinformation{
+    background-image: url(./images/donateinformationbg.svg);
+    background-size: cover;
+    width:100%;
+    border-radius:0.4rem;
+    height:auto;
+    padding:1.2rem;
+  }
+  .volunteer{
+    background: url(./images/volunteerbg.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:9rem;
+    padding-bottom:7rem;
+    padding-left:9rem;
+    padding-right:9rem; 
+  }
+  .becomevolunteer{
+    background:var(--nav-one);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:9rem;
+    padding-bottom:7rem;
+    padding-left:9rem;
+    padding-right:9rem; 
+  }
+  .becomevolunteerx2{
+    background:url(./images/becomevolunteerbg.svg) var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:5.5rem;
+    padding-bottom:5.5rem;
+    padding-right:5rem;
+    padding-left:5rem;
+   
+  }
+  .becomevolunteerbtn{
+    background-color: #ffffff;
+    color:#28A9F2;
+    font-size:0.9rem;
+    margin-left:6rem;
+  }
+  .ceo{
+    background: url(./images/volunteerbg.svg),var(--expert-bg);
+    background-size: cover;
+    width:100%;
+    height:auto;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    padding-left:20rem;
+    padding-right:20rem; 
+  }
+  .executivetalk{
+    font-size:0.8rem;
+  }
+  
+ }
+
+
+@media (min-width: 1400px) {
+ 
+ }
